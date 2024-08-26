@@ -1,0 +1,459 @@
+// Definición de variables de tamaños
+
+@space-0: 0;
+@space-1: 2px;
+@space-2: 4px;
+@space-3: 8px;
+@space-4: 12px;
+@space-5: 16px;
+@space-6: 20px;
+@space-7: 24px;
+@space-8: 28px;
+@space-9: 32px;
+@space-10: 36px;
+@space-11: 40px;
+@space-12: 44px;
+@space-13: 48px;
+@space-14: 56px;
+@space-15: 60px;
+@space-16: 64px;
+@space-17: 68px;
+@space-18: 80px;
+@space-19: 96px;
+
+@border-radius-sm: @space-1;
+@border-radius-md: @space-2;
+@border-radius-lg: @space-3;
+@border-radius-xl: @space-12;
+
+@stroke-weight-sm: 1px;
+@stroke-weight-md: @space-1;
+@stroke-weight-lg: @space-2;
+
+
+// Definición de variables de colores
+
+// Color Surface: Colores de superficies, background, stroke, colores de texto, etc.
+@col-surf-50: #F6F5F5;
+@col-surf-100: #EDECEA;
+@col-surf-200: #DCD9D6;
+@col-surf-300: #C5BEB7;
+@col-surf-400: #B2ACA4;
+@col-surf-500: #959089;
+@col-surf-600: #7C7872;
+@col-surf-700: #53504C;
+@col-surf-800: #373633;
+@col-surf-900: #2D2B29;
+
+// Color Primario: Color primario de Casiopea, para botones, links, títulos, etc.
+@col-prim-50: #F6EAE8;
+@col-prim-100: #EED6D1;
+@col-prim-200: #D4998B;
+@col-prim-300: #B1472E;
+@col-prim-400: #A83217;
+@col-prim-500: #972D15;
+@col-prim-600: #7E2611;
+@col-prim-700: #54190C;
+@col-prim-800: #2A0D06;
+@col-prim-900: #170101;
+
+// Color Succes: Para notificar al usuario de acciones exitosas
+@col-succes-50: #F6FEFB;
+@col-succes-100: #1BC590;
+@col-succes-200: #12825F;
+@col-succes-300: #0E674B;
+@col-succes-400: #0A4834;
+
+// Color Warning: Para alertar al usuario
+@col-warning-50: #FFFDFA;
+@col-warning-100: #F9DBB5;
+@col-warning-200: #F2AB53;
+@col-warning-300: #EE9322;
+@col-warning-400: #A6620D;
+
+// Color Danger: Para notificar al usuario de acciones incompletas o errores
+@col-danger-50: #FBEAEA;
+@col-danger-100: #E16B6B;
+@col-danger-200: #C92929;
+@col-danger-300: #A92323;
+@col-danger-400: #6E1717;
+
+
+// Variables de tipografías para estilos de párrafo
+
+// Propuesta 0
+
+@font-serif: 'Work Sans';
+@font-code: 'IBM Plex Mono';
+@font-sans: 'Work Sans';
+
+
+// Variables de tamaño de textos
+
+@size-text-heading-lg: @space-13;         // Tamaño 48px
+@size-text-heading-md: @space-10;          // Tamaño 36px
+@size-text-heading-sm: @space-8;          // Tamaño 28px
+
+@size-text-h1: 1.476rem;        // Tamaño 32px
+@size-text-h2: 1.383rem;        // Tamaño 28px
+@size-text-h3: 1.296rem;        // Tamaño 24px
+@size-text-h4: 1.215rem;        // Tamaño 20px
+@size-text-h5: 1.138rem;        // Tamaño 16px
+
+@size-text-body-lg: 1.067rem;   // Tamaño 20px
+@size-text-body-md: 1rem;   // Tamaño 16px
+@size-text-body-sm: 0.937rem;   // Tamaño 12px
+
+@size-text-caption: 0.878rem;   // Tamaño 12px
+
+@size-text-code: 1rem;      // Tamaño 16px
+
+@size-text-nav: 1rem;
+
+@size-text-ficha-titulo: 0.937rem;
+@size-text-ficha-body: 1rem;
+
+@size-text-sans-lg: 1.067rem;
+@size-text-sans-md: 1rem;
+@size-text-sans-sm: 0.937rem;
+
+
+/* Estilos de párrafo para distintas categorías de texto */
+
+
+.cont {       /* Contenido */
+
+/* Encabezados */
+
+  h1 {
+    font-family: @font-serif;
+    font-size: @size-text-h1;
+    font-weight: 700;
+    color: @col-prim-800;
+  }
+  
+  h2 {
+    font-family: @font-serif;
+    font-size: @size-text-h2;
+    font-weight: 700;
+    color: @col-prim-700;
+  }
+  
+  h3 {
+    font-family: @font-serif;
+    font-size: @size-text-h3;
+    font-weight: 600;
+    color: @col-prim-600;
+  }
+  
+  h4 {
+    font-family: @font-serif;
+    font-size: @size-text-h4;
+    font-weight: 600;
+    color: @col-surf-700;
+  }
+  
+  h5 {
+    font-family: @font-serif;
+    font-size: @size-text-h5;
+    font-weight: 500;
+    color: @col-surf-600;
+  }
+
+  /* Body */
+
+  p {
+    font-family: @font-serif;
+    font-size: @size-text-body-md;
+    line-height: 1.6; /* Ajusta según necesites */
+    color: @col-surf-900;
+  }
+   
+  .body-lg {
+    font-size: @size-text-body-lg;
+    color: @col-surf-900;
+  }
+  
+  .body-sm {
+    font-size: @size-text-body-sm;
+    color: @col-surf-900;
+  }
+
+  ul, ol {
+    font-family: @font-serif;
+    font-size: @size-text-body-md;
+    line-height: 1.6;
+    color: @col-surf-900;
+    margin: 0 0 @space-4 0;  // Opcional: margenes para el listado
+    padding-left: @space-6;  // Ajusta según tus necesidades
+  
+    li {
+      margin-bottom: @space-2;  // Espacio entre los ítems de la lista
+    }
+  }
+  
+  .caption {
+    font-size: @font-serif;
+    font-style: italic;
+    color: @col-surf-500;
+    font-size: @size-text-caption;
+    line-height: 1.3;
+  }
+
+  .code {
+    font-family: @font-code;
+    font-size: @size-text-code;
+    color: @col-surf-900;
+    padding: @space-1; /* Utilizando la variable de espacio para padding */
+    border-radius: 4px;
+  }
+}
+  
+
+
+.nav{       /* Barra de navegación */
+
+  body {
+    font-family: @font-sans;
+    font-size: @size-text-nav;
+    line-height: 1.6;
+    color: @col-surf-900;
+  }
+
+}
+
+
+.tabla{       /* Tabla de contenidos */
+
+  body {
+    font-family: @font-sans;
+    font-size: @size-text-sans-md;
+    line-height: 1.6; /* Ajusta según necesites */
+    color: @col-surf-700;
+  }
+
+
+}
+  
+// Grillas
+
+// Grillas página
+
+@sidebar-width: 172px;        // Ancho fijo de la barra de navegación
+@content-width: 620px;        // Ancho fijo del contenido principal
+@toc-width: 240px;            // Ancho fijo de la tabla de contenidos
+
+.page-grid {
+  display: grid;
+  grid-template-columns: @sidebar-width auto @toc-width;
+  grid-gap: @space-4;
+  background-color: @col-surf-50;
+
+  .sidebar {
+    width: @sidebar-width;
+    position: fixed; /* Fija la barra lateral */
+    left: @space-4;
+    top: 0;
+    bottom: 0;
+  }
+
+  .content {
+    width: @content-width;
+    margin: 0 auto; /* Centra el contenido */
+    grid-column: 2; /* Coloca el contenido en la segunda columna de la grilla */
+
+    img {
+      width: 100%;
+      height: auto; // Mantiene la proporción de la imagen
+      cursor: pointer; // Cambia el cursor a una mano al pasar sobre la imagen
+    }
+
+    .ficha {
+      display: grid;
+      grid-template-columns: auto 1fr; // La primera columna se ajusta al contenido, la segunda ocupa el espacio restante
+      grid-gap: @space-4; // Espacio entre columnas
+      margin: @space-14 0; // Margen superior e inferior
+      line-height: 1; // Eliminar espacio extra entre líneas (esto también afecta la altura de las filas)
+
+      .ficha-titulo {
+        font-family: @font-sans;
+        font-size: @size-text-ficha-titulo;
+        font-weight: medium;
+        text-transform: capitalize;
+        color: @col-surf-500;
+        text-align: right;
+        
+      }
+
+      .ficha-body {
+        font-family: @font-sans;
+        font-size: @size-text-ficha-body;
+        font-weight: regular;
+        color: @col-surf-900;
+      }
+    
+    }
+  }
+
+  .toc {
+    width: @toc-width;
+    position: fixed; /* Fija la tabla de contenidos */
+    right: @space-4;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+
+// Nav bar
+
+.navbar {
+  background-color: @col-surf-50; // Color de fondo de la barra de navegación
+  padding: @space-3; // Espaciado alrededor del contenido de la barra
+}
+
+.navbar-list {
+  list-style: none; // Elimina los puntos o números de la lista
+  margin: @space-2;
+  padding: 0;
+  display: flex;
+  flex-direction: column; // Organiza los ítems en una columna
+  align-items: flex-start; // Alinea los elementos a la izquierda
+}
+
+.navbar-item {
+  margin-bottom: @space-2; // Espacio entre cada enlace verticalmente
+}
+
+.navbar-link {
+  font-family: @font-sans; // Mantiene la consistencia con otros textos
+  font-size: @size-text-body-md;
+  color: @col-surf-900; // Color del texto de los enlaces
+  text-decoration: none; // Elimina el subrayado de los enlaces
+  padding: @space-2 @space-4; // Espaciado interno para hacer clic
+  border-radius: @border-radius-sm; // Bordes redondeados para los enlaces
+  width: 100%; // Hace que el enlace ocupe el 100% del contenedor padre
+  
+  &:hover {
+    background-color: @col-surf-200; // Color de fondo al pasar el cursor
+    color: @col-surf-900; // Color del texto al pasar el cursor
+  }
+}
+
+
+.navbar-list {
+  list-style: none; // Elimina los puntos o números de la lista
+  margin: 0;
+  padding: 0;
+  display: flex; // Organiza los ítems en línea
+  justify-content: space-around; // Distribuye el espacio entre los elementos
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  font-family: @font-serif; // Mantiene la consistencia con otros textos
+  font-size: @size-text-body-md;
+  color: @col-surf-900; // Color del texto de los enlaces
+  text-decoration: none; // Elimina el subrayado de los enlaces
+  padding: @space-2 @space-4; // Espaciado interno para hacer clic
+  border-radius: @border-radius-sm; // Bordes redondeados para los enlaces
+  
+  &:hover {
+    background-color: @col-surf-200; // Color de fondo al pasar el cursor
+    color: @col-surf-900; // Color del texto al pasar el cursor
+  }
+}
+
+
+// Componente opciones página
+
+// primero la molécula, las "tabs"
+
+.tab-op {       // creamos el estilo del flex
+  display: flex;
+  align-items: center;
+  padding: @space-2;  /* Padding alrededor de la molécula */
+  cursor: pointer;
+
+  img {       // estilos del ícono
+    width: 24px;
+    height: 24px;
+    margin-right: @space-2;  /* Espacio entre el ícono y el texto */
+  }
+
+  span {        //estilos de los links
+    font-family: @font-sans;
+    font-size: @size-text-nav;
+    color: @col-surf-900;
+    line-height: 24px;  /* Asegura que el texto esté centrado verticalmente */
+  }
+
+  /* Estado "default" (sin clase adicional, estilos base) */
+  background-color: transparent;
+
+  /* Estado "clicked" */
+  &.clicked {
+    span, img {
+      color: @col-prim-600;
+    }
+    font-weight: 600;
+    border-bottom: 2px solid @col-prim-600;  /* Línea inferior */
+  }
+
+  /* Estado "hover" */
+  &:hover {
+    background-color: @col-surf-200;
+  }
+}
+
+// ahora el organismo, el grupo de moleculas
+
+.tabs {
+  display: flex;
+  gap: @space-5;  /* Espacio entre las moléculas */
+}
+
+
+// componente tarjeta de galería
+
+// tarjeta
+
+.tarjeta-galeria {
+  width: 184px; // Ancho total del componente
+  padding: @space-3; // Padding alrededor del grupo imagen-texto
+  border: @stroke-weight-sm solid @col-surf-200; // Borde con color y grosor definidos
+  border-radius: @border-radius-sm; // Bordes redondeados
+  background-color: @col-surf-100; // Puedes definir un color de fondo si es necesario
+  
+  .img-frame {
+    width: 168px;
+    height: 134px;
+    overflow: hidden; // Esconde cualquier parte de la imagen que exceda el tamaño del frame
+    display: flex;
+    justify-content: center; // Centra la imagen horizontalmente
+    align-items: center; // Centra la imagen verticalmente
+    margin-bottom: @space-2; // Espacio entre la imagen y el texto
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover; // Mantiene la proporción de la imagen
+    }
+  }
+
+  .texto {
+    width: 168px; // Ancho del texto igual al del frame
+  }
+}
+
+// grilla para organizar las tarjetas
+
+.tarjeta-galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(184px, 1fr)); // Acomoda las tarjetas según el espacio disponible
+  grid-gap: @space-4 @space-3; // Espaciado horizontal y vertical entre las tarjetas
+  align-items: start; // Alinea las tarjetas hacia arriba
+}

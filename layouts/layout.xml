@@ -1,0 +1,16 @@
+<layout>
+  <!-- Barra de navegación (similar a Chameleon o Bo) -->
+  <Navbar position="top" />
+
+  <!-- Contenido principal con barra lateral -->
+  <MainContent>
+    <Sidebar position="left">
+      <!-- Aquí va la tabla de contenidos -->
+      <TOC />
+    </Sidebar>
+    <Content />
+  </MainContent>
+
+  <!-- Pie de página (opcional) -->
+  <Footer />
+</layout>

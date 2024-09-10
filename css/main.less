@@ -1,0 +1,88 @@
+// Colores principales
+@primary-color: #3498db; // Azul para la barra de navegación
+@secondary-color: #2ecc71; // Verde para los detalles o la barra lateral
+@text-color: #333; // Color del texto
+
+// Tipografía
+@font-stack: 'Arial', sans-serif;
+
+nav {
+    background-color: @primary-color;
+    padding: 1em;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline;
+        margin-right: 1em;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          font-family: @font-stack;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  
+  aside {
+    width: 250px;
+    background-color: @secondary-color;
+    padding: 1em;
+    float: left;
+    margin-right: 2em;
+  
+    h2 {
+      font-family: @font-stack;
+      color: white;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 0.5em;
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  
+  footer {
+    background-color: @primary-color;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    font-family: @font-stack;
+  
+    p {
+      margin: 0;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
